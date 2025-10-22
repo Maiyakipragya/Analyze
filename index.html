@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Developer Brief</title>
+</head>
+<body>
+<h1>Web Developer Brief</h1>
+<p>You are given two attachments: execute.py and data.xlsx.</p>
+<p>Commit execute.py after fixing the non-trivial error in it.</p>
+<p>Ensure it runs on Python 3.11+ with Pandas 2.3.</p>
+<p>Convert data.xlsx to data.csv and commit it.</p>
+<p>Add a GitHub Actions push workflow at .github/workflows/ci.yml that:</p>
+<ul>
+  <li>Runs ruff and shows its results in the CI log</li>
+  <li>Runs: python execute.py &gt; result.json</li>
+  <li>Publishes result.json via GitHub Pages</li>
+</ul>
+<p>Do not commit result.json; it must be generated in CI.</p>
+<p><strong>Attachments:</strong> Your code should fetch files like File: execute.py File: data.xlsx from the same directory (e.g., './data.csv').</p>
+</body>
+</html>
